@@ -4,7 +4,7 @@
 }
 
 body{
-	background: black;
+	
 	display: block;
 	margin: 0px;
 	padding: 0px;
@@ -42,16 +42,16 @@ body{
 	transform: scale(1.05);
 }
 .ibeto{
-	background-color:#ff1744 ; 
+	background-color:#00897B ; 
 }
 .rules{
-	background-color:#651FFF; 
+	background-color:#0097A7; 
 }
 .timeline{
-	background-color:#76FF03 ; 
+	background-color:#0277BD ; 
 }
 .contact{
-	background-color:#FF3d00 ; 
+	background-color:#0091EA ; 
 }
 
 .column span{
@@ -83,7 +83,7 @@ body{
 	height: inherit;
 }
 .para{
-	font-size: 25px;
+	font-size: 15px;
 	color: white;
 	position: absolute;
   	top: 50%;
@@ -113,4 +113,10 @@ body{
 	.column span {
 		font-size: 20px; 
 	}
+}
+.contacts{
+	display: flex;
+}
+.heads{
+	margin: 20px;
 }
