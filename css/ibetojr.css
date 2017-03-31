@@ -1,15 +1,50 @@
-
+*{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
 
 body{
+	background: black;
+	display: block;
+	margin: 0px;
+	padding: 0px;
 	
+}
+.header{
+	height:100px;
+	width: 100%;
+	background-color: white;
+	margin: 0px;
+	padding: 0px;
 }
 .columns{
 	display: flex;
-	height: 95vh;
+	height: 90vh;
 }
 .column{
 	width: 25%;
 	height: 100%;
 	margin: 1%;
-	border: solid black 1px;
+	border: solid white 15px;
+	transition-duration: 1s;
+	text-align: center;
+}
+.column:hover{
+	transform: scale(1.05);
+}
+.ibeto{
+	background-color:#ff1744 ; 
+}
+.rules{
+	background-color:#651FFF; 
+}
+.timeline{
+	background-color:#76FF03 ; 
+}
+.contract{
+	background-color:#FF3d00 ; 
+}
+
+.column span{
+	color: white;
+	font-size: 50px;
 }
