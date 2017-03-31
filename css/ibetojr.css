@@ -7,23 +7,29 @@ body{
 	display: block;
 	margin: 0px;
 	padding: 0px;
+	height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
 	
 }
 .header{
 	height:100px;
-	width: 100%;
-	background-color: white;
+	width: 100vw;
+	background-color: whitesmoke;
 	margin: 0px;
 	padding: 0px;
+	text-align: center;
+	display: flex;
 }
 .columns{
 	display: flex;
 	height: 90vh;
+	width: 100%;
 }
 .column{
 	width: 25%;
 	height: 100%;
-	margin: 1%;
+	margin: 10px;
 	border: solid white 15px;
 	transition-duration: 1s;
 	text-align: center;
@@ -47,4 +53,39 @@ body{
 .column span{
 	color: white;
 	font-size: 50px;
+}
+.meclogo{
+	width: 150px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.excellogo{
+	width: 150px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.ibetologo{
+	width: 100px;
+}
+.header div{
+	width: 33.3%;
+	text-align: center;
+	height: inherit;
+}
+
+@media(max-width: 768px){
+	.header img{
+		width: 100px;
+
+	}
+	.columns{
+		display: block;
+	}
+	.column{
+		width: 90%;
+		margin: 0 auto;
+		padding: 0;
+	}
 }
