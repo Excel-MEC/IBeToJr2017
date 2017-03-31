@@ -18,6 +18,7 @@ body{
 	width: 100vw;
 	background-color: whitesmoke;
 	margin: 0px;
+	margin-bottom: 1%;
 	padding: 0px;
 	text-align: center;
 	display: flex;
@@ -49,7 +50,7 @@ body{
 .timeline{
 	background-color:#76FF03 ; 
 }
-.contract{
+.contact{
 	background-color:#FF3d00 ; 
 }
 
@@ -81,11 +82,24 @@ body{
 	text-align: center;
 	height: inherit;
 }
+.para{
+	font-size: 25px;
+	color: white;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%,-50%);
+  	display: none;
+}
+
+.contentrule{
+	font-size: 20px;
+}
 
 @media(max-width: 768px){
 	.header img{
 		width: 100px;
-
+		
 	}
 	.columns{
 		display: block;
@@ -94,5 +108,9 @@ body{
 		width: 90%;
 		margin: 0 auto;
 		padding: 0;
+		transform: scale(0.9);
+	}
+	.column span {
+		font-size: 20px; 
 	}
 }
