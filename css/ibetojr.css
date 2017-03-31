@@ -1,0 +1,15 @@
+
+
+body{
+	
+}
+.columns{
+	display: flex;
+	height: 95vh;
+}
+.column{
+	width: 25%;
+	height: 100%;
+	margin: 1%;
+	border: solid black 1px;
+}
