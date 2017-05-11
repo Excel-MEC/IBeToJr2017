@@ -64,10 +64,11 @@ ul{
 	background-color:#0091EA ; 
 }
 
-.column span{
+.head{
+
 	color: white;
 	font-size: 50px;
-  	position: absolute;
+	position: absolute;
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%,-50%);
@@ -110,6 +111,45 @@ ul{
 }
 .contenttime{
 	width: 60%;
+	position: relative;
+	font-size: 25px;
+}
+.time{
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-150%);
+	display: inline-table;
+}
+.t1{
+	left: 0;
+}
+.t2{
+	left: 20%;
+}
+.t3{
+	left: 40%;
+}
+.t4{
+	left: 60%;
+}
+.t5{
+	left: 80%;
+}
+.t6{
+	left: 100%;
+}
+.line{
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 30px;
+
+}
+.desc{
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,25px);
+	width: 18%;
 }
 hr {
     border: none;
