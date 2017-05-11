@@ -10,7 +10,7 @@ body{
 	padding: 0px;
 	height: 100vh;
 	width: 100vw;
-	overflow-x: hidden;
+	overflow: hidden;
 	border: 0;
 }
 a{
@@ -24,7 +24,7 @@ ul{
 	width: 100vw;
 	background-color: whitesmoke;
 	margin: 0px;
-	margin-bottom: 1%;
+	margin-bottom: 0.6%;
 	padding: 0px;
 	text-align: center;
 	display: flex;
@@ -97,7 +97,7 @@ ul{
 	height: inherit;
 }
 .para{
-	font-size: 15px;
+	font-size: 18px;
 	color: white;
 	position: absolute;
   	top: 50%;
@@ -108,10 +108,15 @@ ul{
 .contentevent{
 	width: 70%;
 }
-.contentrule{
-	font-size: 20px;
+.contenttime{
+	width: 60%;
 }
-
+hr {
+    border: none;
+    height: 3px;
+    color: #fff; 
+    background-color: #fff; 
+}
 @media(max-width: 768px){
 	.header img{
 		width: 100px;
