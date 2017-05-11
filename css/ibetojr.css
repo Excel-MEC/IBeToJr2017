@@ -11,7 +11,13 @@ body{
 	height: 100vh;
 	width: 100vw;
 	overflow-x: hidden;
-	
+	border: 0;
+}
+a{
+	color: indigo;
+}
+ul{
+	text-align: left;
 }
 .header{
 	height:100px;
@@ -25,14 +31,15 @@ body{
 }
 .columns{
 	display: flex;
-	height: 100vh;
+	height: 85vh;
 	width: 100%;
+	text-align: center;
 }
 .column{
-	width: 25%;
+	width: 20%;
 	height: 100%;
 	margin: 10px;
-	border: solid white 15px;
+	/*border: solid white 15px;*/
 	
 	text-align: center;
 	vertical-align: middle;
@@ -44,10 +51,13 @@ body{
 .ibeto{
 	background-color:#00897B ; 
 }
-.rules{
+.event{
 	background-color:#0097A7; 
 }
 .timeline{
+	background-color:#027aDD; 
+}
+.rules{
 	background-color:#0277BD ; 
 }
 .contact{
@@ -61,6 +71,10 @@ body{
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%,-50%);
+}
+.points{
+	text-align: left;
+	display: inline-block;
 }
 .meclogo{
 	width: 150px;
@@ -91,7 +105,9 @@ body{
   	transform: translate(-50%,-50%);
   	display: none;
 }
-
+.contentevent{
+	width: 70%;
+}
 .contentrule{
 	font-size: 20px;
 }
