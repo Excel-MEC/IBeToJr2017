@@ -20,7 +20,7 @@ ul{
 	text-align: left;
 }
 .header{
-	height:100px;
+	height:10vh;
 	width: 100vw;
 	background-color: whitesmoke;
 	margin: 0px;
@@ -31,23 +31,23 @@ ul{
 }
 .columns{
 	display: flex;
-	height: 85vh;
+	height: 90vh;
 	width: 100%;
 	text-align: center;
 }
 .column{
 	width: 20%;
 	height: 100%;
-	margin: 10px;
-	/*border: solid white 15px;*/
+	/*margin: 10px;
+	border: solid white 15px;*/
 	
 	text-align: center;
 	vertical-align: middle;
 	position: relative;
 }
-.column:hover{
+/*.column:hover{
 	transform: scale(1.05);
-}
+}*/
 .ibeto{
 	background-color:#00897B ; 
 }
@@ -107,12 +107,21 @@ ul{
   	display: none;
 }
 .contentevent{
-	width: 70%;
+	width: 85%;
 }
 .contenttime{
 	width: 60%;
 	position: relative;
 	font-size: 25px;
+}
+.image{
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-150%);
+}
+.contentrule{
+	width: 60%;
 }
 .time{
 	position: absolute;
@@ -145,6 +154,9 @@ ul{
 	font-size: 30px;
 
 }
+.hline{
+	display: none;
+}
 .desc{
 	position: absolute;
 	top: 50%;
@@ -157,27 +169,102 @@ hr {
     color: #fff; 
     background-color: #fff; 
 }
-@media(max-width: 768px){
-	.header img{
-		width: 100px;
-
-	}
-	.columns{
-		display: block;
-	}
-	.column{
-		width: 90%;
-		margin: 0 auto;
-		padding: 0;
-		transform: scale(0.9);
-	}
-	.column span {
-		font-size: 20px; 
-	}
+.verticalLine{
+	display: none;
 }
 .contacts{
-	display: flex;
+		display: flex;
 }
 .heads{
 	margin: 20px;
 }
+@media(max-width: 768px){
+	body{
+		overflow-y: scroll;
+	}
+	.para{
+		font-size: 10px;
+		width: 85%;
+	}
+	.column:hover{
+		transform: none;
+	}
+	.header img{
+		width: 60%;
+
+	}
+	.columns{
+		display: block;
+		
+		width: 100vw;
+	}
+	.column{
+
+		width: 100%;
+		margin: auto;
+		padding: 0;
+		height: 20%;
+	}
+	.head {
+		font-size: 20px; 
+	}
+	.contacts{
+		display: block;
+	}
+	.line{
+		display: none;
+	}
+	.hline{
+		/*position: absolute;*/
+		display: block;
+		font-size: 30px;
+		letter-spacing: -4px;
+	}
+
+	.verticalLine {
+	  	border-left: thick solid #ffffff;
+	  	display: block;
+	  	position: absolute;
+	  	height: 100%;
+	  	left: 50%;
+	}
+	.time{
+		left:40%;
+	}
+	.desc{
+		left: 80%;
+		width: 50%;
+	}
+	.descdiv{
+		text-align: left;
+	}
+	.timediv{
+		text-align: right;
+	}
+	.t1{
+		top: 0;
+	}
+	.t2{
+		top: 20%;
+	}
+	.t3{
+		top: 40%;
+	}
+	.t4{
+		top: 60%;
+	}
+	.t5{
+		top: 80%;
+	}
+	.t6{
+		top: 100%;
+	}
+	hr{
+		display: none;
+	}
+	.image{
+		height: 50px;
+		left: 20%;
+	}
+}
+	
