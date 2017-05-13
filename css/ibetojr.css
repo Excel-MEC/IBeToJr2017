@@ -20,7 +20,7 @@ ul{
 	text-align: left;
 }
 .header{
-	height:10vh;
+	height:13vh;
 	width: 100vw;
 	background-color: whitesmoke;
 	margin: 0px;
@@ -66,7 +66,7 @@ ul{
 .head{
 
 	color: white;
-	font-size: 50px;
+	font-size: 30px;
 	position: absolute;
   	top: 50%;
   	left: 50%;
@@ -162,6 +162,8 @@ ul{
 	top: 50%;
 	transform: translate(-50%,25px);
 	width: 18%;
+	font-size: 18px;
+
 }
 hr {
     border: none;
@@ -190,12 +192,11 @@ hr {
 		transform: none;
 	}
 	.header img{
-		width:55%;
+		width:40%;
 
 	}
 	.columns{
 		display: block;
-		
 		width: 100vw;
 	}
 	.column{
