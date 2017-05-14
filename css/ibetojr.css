@@ -1,10 +1,10 @@
 *{
-	font-family: 'Raleway', sans-serif;
-	transition-duration: 1s;
+	/*font-family: 'Raleway', sans-serif;*/
+	/*transition-duration: 1s;*/
 }
 
 body{
-	
+
 	display: block;
 	margin: 0px;
 	padding: 0px;
@@ -20,7 +20,7 @@ ul{
 	text-align: left;
 }
 .header{
-	height:10vh;
+	height:13vh;
 	width: 100vw;
 	background-color: whitesmoke;
 	margin: 0px;
@@ -35,11 +35,13 @@ ul{
 	text-align: center;
 }
 .column{
+	transition: width 1s, height 1s;
 	width: 20%;
 	height: 100%;
+	cursor: pointer;
 	/*margin: 10px;
 	border: solid white 15px;*/
-	
+
 	text-align: center;
 	vertical-align: middle;
 	position: relative;
@@ -48,25 +50,25 @@ ul{
 	transform: scale(1.05);
 }*/
 .ibeto{
-	background-color:#00897B ; 
+	background-color:#00897B ;
 }
 .event{
-	background-color:#0097A7; 
+	background-color:#0097A7;
 }
 .timeline{
-	background-color:#027aDD; 
+	background-color:#027aDD;
 }
 .rules{
-	background-color:#0277BD ; 
+	background-color:#0277BD ;
 }
 .contact{
-	background-color:#0091EA ; 
+	background-color:#0091EA ;
 }
 
 .head{
-
+	transition: 1s;
 	color: white;
-	font-size: 50px;
+	font-size: 30px;
 	position: absolute;
   	top: 50%;
   	left: 50%;
@@ -96,9 +98,13 @@ ul{
 	text-align: center;
 	height: inherit;
 }
+.paramob{
+	display: none;
+}
 .para{
 	font-size: 18px;
 	color: white;
+	max-width: 70%;
 	position: absolute;
   	top: 50%;
   	left: 50%;
@@ -121,7 +127,6 @@ ul{
 }
 .contentrule{
 	width: 80%;
-
 }
 .time{
 	position: absolute;
@@ -162,12 +167,14 @@ ul{
 	top: 50%;
 	transform: translate(-50%,25px);
 	width: 18%;
+	font-size: 18px;
+
 }
 hr {
     border: none;
     height: 3px;
-    color: #fff; 
-    background-color: #fff; 
+    color: #fff;
+    background-color: #fff;
 }
 .verticalLine{
 	display: none;
@@ -179,34 +186,46 @@ hr {
 	margin: 20px;
 }
 @media(max-width: 768px){
-	body{
-		overflow-y: scroll;
-	}
 	.para{
 		font-size: 10px;
 		width: 85%;
+		left: unset;
+		top: unset;
+		margin: auto;
+		position: relative;
+		padding: 20px 0px 20px 0px;
+		transform: none;
+		font-size: 15px;
 	}
 	.column:hover{
 		transform: none;
 	}
 	.header img{
-		width:55%;
-
+		width: 85px;
 	}
 	.columns{
 		display: block;
-		
 		width: 100vw;
+		height: 87vh;
+	}
+	.paramob{
+		padding-top: 20px;
+	}
+	.paradesk{
+		display: none;
+		width: 0;
+		height: 0;
+		margin: 0;
 	}
 	.column{
-
 		width: 100%;
 		margin: auto;
 		padding: 0;
 		height: 20%;
+		overflow: auto;
 	}
 	.head {
-		font-size: 20px; 
+		font-size: 20px;
 	}
 	.contacts{
 		display: block;
@@ -269,8 +288,7 @@ hr {
 		transform: translate(-50%,30%);
 	}
 	.contenttime{
-		left:40%;
+		font-size: 12px;
 		/*transform: translate(-50%,0);*/
 	}
 }
-	

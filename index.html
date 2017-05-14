@@ -4,9 +4,11 @@
 	<title>IBeTo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/ibetojr.css">
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/index.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+	<script src="js/scrollreveal.min.js"></script>
+	<script>
+		window.sr = ScrollReveal();
+	</script>
 </head>
 <body>
 	<div class="header">
@@ -30,12 +32,11 @@
 		<div class="column event" id="Event">
 			<span class="event_head head">Event Details</span>
 			<div class="para contentevent">
-				<h3>Event Format</h3>
-				<p>It’s all pretty simple actually! All you need to do is:</p>
+				<p>It is all pretty simple actually! All you need to do is:</p>
 				<div class="points">
-					<p>→Come up with an ingenious idea; which shouldn’t be all that difficult being the little genius that you are ;)<br>
-					→ Fill in the details in the google form in the official IBeTo website, <a href="https://ibeto.excelmec.org">ibeto@excelmec.org</a>.<br>
-					→ If your idea is one among the best projects to get selected, you get work on your project and exhibit it at Excel 2017, come this October!</p>
+					<p>Come up with an ingenious idea; which shouldn’t be all that difficult being the little genius that you are <br>
+					 Fill in the details in the google form in the official IBeTo website, <a href="https://ibeto.excelmec.org">ibeto@excelmec.org</a>.<br>
+					If your idea is one among the best projects to get selected, you get work on your project and exhibit it at Excel 2017, come this October!</p>
 				</div>
 				<p>Oh! And not to forget the Rs. 25,000 the best project walks away with!<br>
 					So, why wait? IBETO-junior knocks at your door!</p>
@@ -76,7 +77,7 @@
 		</div>
 		<div class="column timeline" id="Timeline">
 			<span class="timeline_head head">Timeline</span>
-			<div class="para contenttime">
+			<div class="para contenttime paradesk">
 				<div>
 					<span ><img src="imgs/idea.png" class="t1 image"></span>
 					<span ><img src="imgs/award.png" class="t6 image"></span>
@@ -119,6 +120,14 @@
 					<span class="t6 desc">Display completed projects at Excel 2017, best project gets cash reward of INR 25,000</span>
 				</div>
 			</div>
+			<div class="para contenttime paramob">
+				<div><p>Jun 5 : Launch IBETO-Junior</p></div>
+				<div><p>Jul 10 :Last date for sending project idea write-up</p></div>
+				<div><p>Jul 15 : Announcement of Shortlisted Teams</p></div>
+				<div><p>Jul 16 : Begin working on projects</p></div>
+				<div><p>Sep 30 : Complete project</p></div>
+				<div><p>Oct 5,6,7 : Display completed projects at Excel 2017, best project gets cash reward of INR 25,000</p></div>
+			</div>
 		</div>
 		<div class="column contact" id="Contact">
 			<span class="contact_head head">Contacts</span>
@@ -138,5 +147,10 @@
 			</div>
 		</div>
 	</div>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+	sr.reveal('.column',{duration: 1000,delay:300},100);
+	</script>
 </body>
 </html>
