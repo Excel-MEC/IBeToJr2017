@@ -1,7 +1,7 @@
 var flag=0;
 
 $(document).ready(function(){
-     $('.column').click(clickhandler);
+     $('.column').on('click',clickhandler);
      function clickhandler(){
      	var clickcolumn = $(this).attr('id');
       console.log(clickcolumn);
