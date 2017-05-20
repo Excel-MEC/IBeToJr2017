@@ -3,19 +3,29 @@ var flag=0;
 $(document).ready(function(){
      $('.column').on('click',clickhandler);
      function clickhandler(){
+      if(screen.width<768)
+        if( flag ==0 ){
+          $('.overlay').css({opacity:0});
+          $('.column').css({cursor:'default'});
+        }
+        else{
+          $('.overlay').css({opacity:0.7});
+          $('.column').css({cursor:'pointer'});
+        }
+
      	var clickcolumn = $(this).attr('id');
       console.log(clickcolumn);
      	if (clickcolumn=="IBeTo") {
      		if (flag==0) {
 	     		$('.column').off('click');
-          setTimeout(()=>{
+          // setTimeout(()=>{
             $(".event,.rules,.timeline,.contact").css({"width":"0%","height":"0","border":"none"});
   	    		$(".rules,.event,.timeline,.contact").css("border","none");
   	    		$(".head").hide();
   	    		if(screen.width >768)
   		    			$(".ibeto").css("width","100%");
   		    		else
-  		    			$(".ibeto").css("height","100%");
+  		    			$(".ibeto,.overlay").css("height","100%");
   	    		flag=1;
   	    		setTimeout(
   	  				function(){
@@ -23,7 +33,7 @@ $(document).ready(function(){
   	    				$(".contentibeto").fadeIn(500);
                 // sr.reveal('.contentibeto',{duration: 1000,opacity:0},100);
   	  			}, 1000);
-          },500);
+          // },500);
      		}
      		else{
           $(".contentibeto").slideUp(500,()=>{

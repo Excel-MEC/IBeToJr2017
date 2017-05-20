@@ -3,8 +3,16 @@
 	/*transition-duration: 1s;*/
 }
 
-body{
+*{
+	font-family: 'Nunito', sans-serif;
+}
 
+a, a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+body{
 	display: block;
 	margin: 0px;
 	padding: 0px;
@@ -13,16 +21,13 @@ body{
 	overflow: hidden;
 	border: 0;
 }
-a{
-	color: indigo;
-}
 ul{
 	text-align: left;
 }
 .header{
 	height:13vh;
 	width: 100vw;
-	background-color: whitesmoke;
+	background-color: white;
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
@@ -38,10 +43,8 @@ ul{
 	transition: width 1s, height 1s;
 	width: 20%;
 	height: 100%;
-	cursor: pointer;
 	/*margin: 10px;
 	border: solid white 15px;*/
-
 	text-align: center;
 	vertical-align: middle;
 	position: relative;
@@ -50,10 +53,36 @@ ul{
 	transform: scale(1.05);
 }*/
 .ibeto{
-	background-color:#00897B ;
+	background-image: url('../imgs/ibeto.jpg');
+}
+.column{
+	background-position: center;
+	background-size: cover;
+	background-color:#0097A7;
+	position: relative;
 }
 .event{
-	background-color:#0097A7;
+	background-image: url('../imgs/idea.jpg');
+}
+
+.rules{
+	background-image: url('../imgs/rules.jpg');
+}
+.timeline{
+	background-image: url('../imgs/something.jpg');
+}
+.contact{
+	background-image: url('../imgs/somethingelse.jpg');
+}
+
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.6;
+	height: 100%;
+	width: 100%;
+	background: #020100; /* Old browsers */
 }
 .timeline{
 	background-color:#027aDD;
@@ -70,28 +99,29 @@ ul{
 	color: white;
 	font-size: 30px;
 	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: 'Varela Round', sans-serif;
 }
 .points{
 	text-align: left;
 	display: inline-block;
 }
 .meclogo{
-	width: 150px;
+	width: 190px;
 	float: left;
 	margin-top: 20px;
 	margin-left: 20px;
 }
 .excellogo{
-	width: 150px;
+	width: 190px;
 	float: right;
 	margin-top: 20px;
 	margin-right: 20px;
 }
 .ibetologo{
-	width: 100px;
+	width: 120px;
 }
 .header div{
 	width: 33.3%;
@@ -101,15 +131,23 @@ ul{
 .paramob{
 	display: none;
 }
+.paramob h3{
+	display: inline-block;
+	margin: 0;
+}
+.paramob div{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
 .para{
-	font-size: 18px;
+	font-size: 19px;
 	color: white;
 	max-width: 70%;
 	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%,-50%);
-  	display: none;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: none;
 }
 .contentevent{
 	width: 85%;
@@ -157,7 +195,6 @@ ul{
 	top: 50%;
 	transform: translate(-50%,-50%);
 	font-size: 30px;
-
 }
 .horline{
 	display: none;
@@ -185,15 +222,38 @@ hr {
 .heads{
 	margin: 20px;
 }
+.social *{
+	color: white;
+	margin: 20px;
+}
 @media(max-width: 768px){
+	.contenthead{
+		margin: 0;
+		padding:10px 0px 10px 0px;
+		width: 100%;
+		background-color: #57667b;
+	}
+	.contenthead h2{
+		color: white;
+	}
+	a{
+		color: black !important;
+	}
 	.para{
 		font-size: 10px;
-		width: 85%;
+		width: 90%;
+		background: url('../imgs/pattern.png');
+		background-repeat: repeat;
+		background-position: center;
 		left: unset;
+		color: rgba(0,0,0,0.8);
 		top: unset;
 		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		max-width: unset;
 		position: relative;
-		padding: 20px 0px 20px 0px;
+		padding: 0px 0px 20px 0px;
 		transform: none;
 		font-size: 15px;
 	}
@@ -207,9 +267,6 @@ hr {
 		display: block;
 		width: 100vw;
 		height: 87vh;
-	}
-	.paramob{
-		padding-top: 20px;
 	}
 	.paradesk{
 		display: none;
@@ -288,7 +345,12 @@ hr {
 		transform: translate(-50%,30%);
 	}
 	.contenttime{
-		font-size: 12px;
+		font-size: 15px;
 		/*transform: translate(-50%,0);*/
+	}
+	.para p,.para li{
+		margin-left: 15px;
+		margin-right: 15px;
+		color: rgba(0,0,0,0.8);
 	}
 }
