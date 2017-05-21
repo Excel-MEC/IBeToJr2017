@@ -6,11 +6,16 @@ $(document).ready(function(){
       if(screen.width<768)
         if( flag ==0 ){
           $('.overlay').css({opacity:0});
-          $('.column').css({cursor:'default'});
         }
         else{
           $('.overlay').css({opacity:0.7});
-          $('.column').css({cursor:'pointer'});
+        }
+      else
+        if( flag ==0 ){
+          $('.overlay').css({opacity:0.9});
+        }
+        else{
+          $('.overlay').css({opacity:0.7});
         }
 
      	var clickcolumn = $(this).attr('id');

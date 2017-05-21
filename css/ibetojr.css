@@ -49,11 +49,22 @@ ul{
 	vertical-align: middle;
 	position: relative;
 }
+.close_button{
+	position: absolute;
+	margin-top: 50px;
+	margin-right: 50px;
+	right: 0;
+	top: 0;
+	font-size: 40px;
+	color: white;
+	cursor: pointer;
+	display: none;
+}
 /*.column:hover{
 	transform: scale(1.05);
 }*/
 .ibeto{
-	background-image: url('../imgs/ibeto.jpg');
+	background-image: url('../imgs/5.jpg');
 }
 .column{
 	background-position: center;
@@ -62,17 +73,17 @@ ul{
 	position: relative;
 }
 .event{
-	background-image: url('../imgs/idea.jpg');
+	background-image: url('../imgs/4.jpg');
 }
 
 .rules{
-	background-image: url('../imgs/rules.jpg');
+	background-image: url('../imgs/3.jpg');
 }
 .timeline{
-	background-image: url('../imgs/something.jpg');
+	background-image: url('../imgs/2.jpg');
 }
 .contact{
-	background-image: url('../imgs/somethingelse.jpg');
+	background-image: url('../imgs/1.jpg');
 }
 
 .overlay{
@@ -82,6 +93,7 @@ ul{
 	opacity: 0.6;
 	height: 100%;
 	width: 100%;
+	transition: opacity 1s;
 	background: #020100; /* Old browsers */
 }
 .timeline{
@@ -355,5 +367,22 @@ hr {
 		margin-left: 15px;
 		margin-right: 15px;
 		color: rgba(0,0,0,0.8);
+	}
+	.social{
+		display: flex;
+		width: 80%;
+		margin: auto;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.facebook i{
+		color: #3b5998;
+	}
+	.gplus i{
+		color: #d34836;
+	}
+	.insta i{
+		color: #fb3958;
 	}
 }
