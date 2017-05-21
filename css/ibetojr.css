@@ -25,7 +25,7 @@ ul{
 	text-align: left;
 }
 .header{
-	height:13vh;
+	height: 83px;
 	width: 100vw;
 	background-color: white;
 	margin: 0px;
@@ -35,7 +35,7 @@ ul{
 }
 .columns{
 	display: flex;
-	height: 90vh;
+	height: calc(100vh - 83px);
 	width: 100%;
 	text-align: center;
 }
@@ -121,19 +121,19 @@ ul{
 	display: inline-block;
 }
 .meclogo{
-	width: 190px;
+	width: 130px;
 	float: left;
-	margin-top: 20px;
+	margin-top: 15px;
 	margin-left: 20px;
 }
 .excellogo{
-	width: 190px;
+	width: 130px;
 	float: right;
-	margin-top: 20px;
+	margin-top: 15px;
 	margin-right: 20px;
 }
 .ibetologo{
-	width: 120px;
+	width: 90px;
 }
 .header div{
 	width: 33.3%;
@@ -165,7 +165,7 @@ ul{
 	display: none;
 }
 .contentevent{
-	width: 85%;
+	width: 80%;
 }
 .contenttime{
 	width: 60%;
@@ -247,6 +247,14 @@ hr {
 		padding:10px 0px 10px 0px;
 		width: 100%;
 		background-color: #57667b;
+	}
+	.meclogo{
+		margin-top: 17px;
+		margin-left: 15px;
+	}
+	.excellogo{
+		margin-top: 17px;
+		margin-right: 15px;
 	}
 	.contenthead h2{
 		color: white;
@@ -370,11 +378,14 @@ hr {
 	}
 	.social{
 		display: flex;
-		width: 80%;
+		width: 100%;
 		margin: auto;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-around;
+	}
+	.social *{
+		margin: 10px;
 	}
 	.facebook i{
 		color: #3b5998;
@@ -384,5 +395,15 @@ hr {
 	}
 	.insta i{
 		color: #fb3958;
+	}
+	.heads{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 1400px) {
+	.para{
+		max-width: unset;
+		font-size: 15px;
 	}
 }
