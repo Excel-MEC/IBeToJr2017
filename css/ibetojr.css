@@ -51,8 +51,6 @@ ul{
 }
 .close_button{
 	position: absolute;
-	margin-top: 50px;
-	margin-right: 50px;
 	right: 0;
 	top: 0;
 	font-size: 40px;
@@ -242,7 +240,16 @@ hr {
 	margin: 20px;
 }
 @media(max-width: 768px){
+	.close_button{
+		color: black;
+		margin-right: 30px;
+		font-size: 30px;
+		transform: translate(0,-50%);
+		top: 50%;
+		margin-top: 0px !important;
+	}
 	.contenthead{
+		position: relative;
 		margin: 0;
 		padding:10px 0px 10px 0px;
 		width: 100%;

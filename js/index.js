@@ -17,8 +17,7 @@ $(document).ready(function(){
         else{
           $('.overlay').css({opacity:0.7});
         }
-
-     	var clickcolumn = $(this).attr('id');
+      var clickcolumn = $(this).attr('id');
       console.log(clickcolumn);
      	if (clickcolumn=="IBeTo") {
      		if (flag==0) {
@@ -36,11 +35,13 @@ $(document).ready(function(){
   	  				function(){
   	    				$('.column').on('click',clickhandler);
   	    				$(".contentibeto").fadeIn(500);
+                $('#ibetoClose').fadeIn(500);
                 // sr.reveal('.contentibeto',{duration: 1000,opacity:0},100);
   	  			}, 1000);
           // },500);
      		}
      		else{
+          $('#ibetoClose').fadeOut(200);
           $(".contentibeto").slideUp(500,()=>{
   	    		//$(".rules,.event,.timeline,.contact").css("border","solid white 15px");
   	    		$(".head").show();
@@ -73,10 +74,11 @@ $(document).ready(function(){
 	  				function(){
 	  					$('.column').on('click',clickhandler);
 	    				$(".contentevent").fadeIn(500);
+              $('#eventClose').fadeIn(500);
 	  			}, 1000);
      		}
      		else{
-
+          $('#eventClose').fadeOut(200);
           $('.contentevent').slideUp(500,()=>{
       		//$(".ibeto,.timeline,.contact").css("border","solid white 15px");
         		$(".head").show();
@@ -108,9 +110,11 @@ $(document).ready(function(){
 	  				function(){
 	  					$('.column').on('click',clickhandler);
 	    				$(".contentrule").fadeIn(500);
+              $('#rulesClose').fadeIn(500);
 	  			}, 1000);
      		}
      		else{
+          $('#rulesClose').fadeOut(200);
           $('.contentrule').slideUp(500,()=>{
         		//$(".ibeto,.timeline,.contact").css("border","solid white 15px");
         		$(".head").show();
@@ -129,6 +133,7 @@ $(document).ready(function(){
       }
      	else if (clickcolumn=="Timeline") {
         window.cname = "";
+        window.closeButton = "";
      		if (flag==0) {
      			$('.column').off('click');
 	     		$(".ibeto,.event,.rules,.contact").css("width","0%");
@@ -138,10 +143,12 @@ $(document).ready(function(){
 	    		if(screen.width >768){
 	    			$(".timeline").css("width","100%");
             cname = ".paradesk";
+            closeButton = "#timelineCloseH";
           }
 	    		else{
 	    			$(".timeline").css("height","100%");
             cname = ".paramob";
+            closeButton = "#timelineCloseL";
           }
 	    		flag=1;
 	    		setTimeout(
@@ -149,9 +156,11 @@ $(document).ready(function(){
               console.log(cname);
 	  					$('.column').on('click',clickhandler);
 	    				$(cname).fadeIn(500);
+              $(closeButton).fadeIn(500);
 	  			}, 1000);
      		}
      		else{
+          $(closeButton).fadeOut(200);
           $('.contenttime').fadeOut(500,()=>{
   	    		//$(".ibeto,.event,.rules,.contact").css("border","solid white 15px");
   	    		$(".head").show();
@@ -183,9 +192,11 @@ $(document).ready(function(){
 	  				function(){
 	    				$(".contentcontact").fadeIn(500);
 	    				$('.column').on('click',clickhandler);
+              $('#contactClose').fadeIn(500);
 	  			}, 1000);
      		}
      		else{
+          $('#contactClose').fadeOut(200);
           $('.contentcontact').slideUp(500,()=>{
   	    		//$(".ibeto,.event,.timeline,.rules").css("border","solid white 15px");
   	    		$(".head").show();
