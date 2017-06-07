@@ -248,6 +248,9 @@ hr {
 		top: 50%;
 		margin-top: 0px !important;
 	}
+	.column{
+		will-change: width,height;
+	}
 	.contenthead{
 		position: relative;
 		margin: 0;
