@@ -48,15 +48,19 @@ ul{
 	text-align: center;
 	vertical-align: middle;
 	position: relative;
+	will-change: width,height;
 }
 .close_button{
 	position: absolute;
 	right: 0;
 	top: 0;
-	font-size: 40px;
+	font-size: 35px;
 	color: white;
 	cursor: pointer;
 	display: none;
+	transform: translate(0,-50%);
+	top: 50%;
+	margin-top: 0px !important;
 }
 /*.column:hover{
 	transform: scale(1.05);
@@ -239,17 +243,14 @@ hr {
 	color: white;
 	margin: 20px;
 }
+.contenthead{
+	position: relative;
+}
 @media(max-width: 768px){
 	.close_button{
 		color: black;
 		margin-right: 30px;
 		font-size: 30px;
-		transform: translate(0,-50%);
-		top: 50%;
-		margin-top: 0px !important;
-	}
-	.column{
-		will-change: width,height;
 	}
 	.contenthead{
 		position: relative;
