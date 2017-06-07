@@ -157,7 +157,7 @@ function handleClose(e){
       $(".ibeto,.event,.timeline,.rules,.contact").css("width","100%");
     }
   }
-  else if(clickButton=="timelineClose"){
+  else if(clickButton=="timelineCloseH"||clickButton=="timelineCloseL"){
     $(closeButton).fadeOut(200);
     $(cname).fadeOut(500,()=>{
       //$(".ibeto,.event,.rules,.contact").css("border","solid white 15px");
