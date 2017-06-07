@@ -300,7 +300,7 @@ hr {
 	.columns{
 		display: block;
 		width: 100vw;
-		height: 87vh;
+		height: calc(100vh - 83px);
 	}
 	.paradesk{
 		display: none;
